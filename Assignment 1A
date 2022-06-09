@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string x, y, z, w, result;
+	cout << "x + (y / z) * w = ?" << endl;
+	cout << "Enter the first term:";
+	getline(cin,x);
+	cout << x << "+ (y / z) * w = ?";
+	cout << "Enter the second term:";
+	getline(cin, y);
+	cout << x << "+("<<y<<" / z)* w = ? "<< endl;
+	cout << "Enter the third term:";
+	getline(cin,z);
+	cout << x << "+("<<y<<"/"<<z<<")* w = ? " << endl;
+	cout << "Enter the fourth term:";
+	getline(cin, w);
+	cout << x << "+ (" << y << "/" << z << ") * " << w << "=?" << endl;
+	result = x + (y / z)* w;
+	cout << x << "+ (" << y << "/" << z << ") * " << w <<""<< result;
+	return 0;
+}
